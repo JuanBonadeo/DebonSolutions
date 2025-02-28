@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: #FB6F18;
+}
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.btn-primary {
+  @apply bg-amber-600 hover:bg-amber-800 text-white py-2 px-4 rounded transition-all cursor-pointer;
+}
+
+.btn-disabled {
+  @apply bg-gray-600 text-black py-2 px-4 rounded transition-all;
+}
+
+.mtop {
+  @apply mt-5
+}
+
+.mbot {
+  @apply mb-5
+}
+
+
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-moving-gradient {
+  background-size: 200% 200%;
+  animation: movingGradient 3s ease infinite;
+ }
