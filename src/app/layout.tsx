@@ -13,10 +13,10 @@ const geistSans = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - D&B Solutions",
-    default: "D&B Solutions",
+    template: "%s - Debon Solutions",
+    default: "Debon Solutions",
   },
-  description: "D&B Solutions is a software development company",
+  description: "Debon Solutions is a software development company",
 };
 
 export default function RootLayout({
