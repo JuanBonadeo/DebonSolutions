@@ -29,19 +29,19 @@ const items = [
 
 export const Hero2 = () => {
     return (
-            <div className="!my-15 flex justify-center items-center flex-col gap-4">
+            <div className="!my-15 flex justify-center items-center flex-col gap-1">
                 <h2 className="text-2xl text-center font-semibold">Innovación, calidad y compromiso</h2>
-                <div className="grid grid-cols-2 py-10 gap-10 mtop">
+                <div className="grid md:grid-cols-2 gap-3 lg:gap-10 mtop">
                     {items.map((item) => (
                         <div
                             key={item.title}
-                            className="bg-gray-200 rounded flex flex-col justify-center items-start !py-6 !px-6 gap-1"
+                            className="bg-gray-200 rounded flex flex-col justify-center items-center gap-1 p-3 lg:!p-6 "
                         >
-                            <div className="flex justify-center items-start gap-4">
+                            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
                                 {item.icon}
-                                <h3 className="text-xl font-bold">{item.title}</h3>
+                                <h3 className="text-xl font-bold text-center">{item.title}</h3>
                             </div>
-                            <p className="p-4 max-w-xs text-left">{item.p}</p>
+                            <p className=" max-w-2xs text-center md:p-4 md:max-w-xs md:text-left">{item.p}</p>
                         </div>
                     ))}
                 </div>

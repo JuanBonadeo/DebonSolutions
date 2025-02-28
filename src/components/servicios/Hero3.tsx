@@ -36,12 +36,12 @@ const items = [
 
 export const Hero3 = () => {
     return (
-        <div className='flex flex-col justify-center items-center gap-1 !my-10'>
+        <div className='flex flex-col justify-center items-center gap-1 !my-15'>
 
             <h3 className='text-2xl font-bold'>Nuestro Proceso</h3>
             <h4 className='text-lg font-bold  text-primary'>¿Como funciona?</h4>
 
-            <div className="grid grid-cols-3 gap-5 !my-10">
+            <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 !my-10">
                 {
                     items.map(i => (
                         <div key={i.title} className="flex flex-col justify-center items-center gap-1 bg-gray-200 rounded !p-2">

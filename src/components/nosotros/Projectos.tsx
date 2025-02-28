@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 export const Projectos = () => {
   return (
-    <div className='flex flex-col bg-white justify-center items-center gap-10 !ml-20 !my-10'>
+    <div className='flex flex-col justify-center items-center gap-8 !my-15'>
       <h2 className='text-3xl text-left' >Proyectos destacados</h2>
-      <h4 className='text-xl font-serif'>Proyectos que reflejan nuestra pasión por crear valor.</h4>
-      <div className="grid grid-cols-3 gap-10">
+      <h4 className='text-xl text-center max-w-xs md:max-w-3xl'>Proyectos que reflejan nuestra pasión por crear valor.</h4>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
         <Link href={'https://www.orlandi-inmobiliaria.com/'} className="flex flex-col justify-center items-center gap-3 w-[300px] h-[250px] hover:scale-105 transition-all shadow-2xl rounded-b">
           <Image src={'/orlandi.png'} alt={'orlandi inmobiliaria'} height={800} width={1200} className=' ' />

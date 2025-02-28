@@ -5,11 +5,11 @@ export const Hero1 = () => {
     return (
         <>
         
-         <div className="flex bg-white justify-center items-center h-[65vh] gap-15">
+         <div className="flex flex-col md:flex-row gap-15 md:gap-0 lg:gap-20 justify-center items-center !my-20 md:!my-40 ">
          
-            <div className="flex flex-col gap-5 justify-center items-start">
-                <h1 className='text-4xl font-bold' >SOMOS <span className=' text-primary'>DebonSolutions</span></h1>
-                <p className='text-md text-left max-w-sm'>Utilizamos tecnologías de vanguardia para transformar organizaciones,  potenciando su crecimientol.</p>
+            <div className="flex flex-col gap-5 justify-center items-center lg:items-start">
+                <h1 className='text-4xl font-bold text-center' >SOMOS <span className=' text-primary'>DebonSolutions</span></h1>
+                <p className='text-md text-center md:text-left max-w-sm'>Utilizamos tecnologías de vanguardia para transformar organizaciones,  potenciando su crecimientol.</p>
             </div>
 
 

@@ -29,8 +29,8 @@ const items = [
 export const Hero2 = () => {
     return (
         <>
-            <div className="flex bg-white justify-center items-center gap-15 !my-15 !px-10">
-                <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-col-reverse md:flex-row bg-white justify-center items-center gap-10 lg:gap-15 !my-15 !px-10">
+                <div className="grid md:grid-cols-2 gap-3">
                     {items.map((item) => (
                         <div
                             key={item.title}
