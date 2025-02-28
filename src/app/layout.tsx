@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { TopMenu } from "../components/ui/TopMenu";
 import { Footer } from "@/components/ui/Footer";
-import { redirect } from "next/navigation";
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",

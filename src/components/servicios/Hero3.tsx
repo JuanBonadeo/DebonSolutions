@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
 
 const items = [
-
     {
         title: '1. Análisis de necesidades',
         p: 'Analizamos los requisitos del cliente y la mejor manera de implementar nuestro software.',
@@ -34,21 +32,19 @@ const items = [
         svg: 'nosotros1.svg'
     },
 
-
-
-
 ]
+
 export const Hero3 = () => {
     return (
         <div className='flex flex-col justify-center items-center gap-1 !my-10'>
+
             <h3 className='text-2xl font-bold'>Nuestro Proceso</h3>
             <h4 className='text-lg font-bold text-amber-500'>¿Como funciona?</h4>
-
 
             <div className="grid grid-cols-3 gap-5 !my-10">
                 {
                     items.map(i => (
-                        <div className="flex flex-col justify-center items-center gap-1 bg-gray-200 rounded !p-2">
+                        <div key={i.title} className="flex flex-col justify-center items-center gap-1 bg-gray-200 rounded !p-2">
                             <Image src={i.svg} alt={i.title} height={800} width={1200} className='w-[150px]' />
                             <h4 className='font-bold'>{i.title}</h4>
                             <p className='text-xs max-w-2xs text-center'>{i.p}</p>
@@ -56,15 +52,7 @@ export const Hero3 = () => {
                         </div>
                     ))
                 }
-
-
-
-
             </div>
-
-
-
-
 
 
         </div>

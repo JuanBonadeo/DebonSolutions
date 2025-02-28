@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import { IoArrowForward } from 'react-icons/io5'
 import { Line } from '../ui/Line'
-import { ParticlesBackground } from '../ui/particle'
 
 export const Hero1 = () => {
     return (

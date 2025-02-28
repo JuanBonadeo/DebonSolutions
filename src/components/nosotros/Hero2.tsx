@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
-import { Line } from '../ui/Line'
+
 
 export const Hero2 = () => {
     return (

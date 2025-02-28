@@ -4,6 +4,10 @@ import { Hero3 } from "@/components/servicios/Hero3";
 
 
 
+export const metadata = {
+ title: 'Servicios',
+ description: 'Nos enfocamos en crear landing pages de alto rendimiento utilizando Next.js, garantizando velocidad, SEO optimizado y una experiencia de usuario excepcional.',
+};
 
 export default function Servicios() {
   return (

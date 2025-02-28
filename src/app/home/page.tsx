@@ -3,6 +3,8 @@ import { Hero1 } from "../../components/home/Hero1";
 import { Hero2 } from "../../components/home/Hero2";
 
 
+
+
 export default function HomePage() {
   return (
     <main>
