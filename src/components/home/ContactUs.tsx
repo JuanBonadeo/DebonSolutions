@@ -9,7 +9,7 @@ export const ContactUs = () => {
             <div className="mtop flex gap-10 justify-center items-center w-[90vw]">
                 <div className="flex flex-col">
                     <div className="flex gap-1">
-                        <p>¿Prefieres llamarnos? - <span className="text-amber-500 font-semibold">543412510795</span></p>
+                        <p>¿Prefieres llamarnos? - <span className=" text-primary font-semibold">543412510795</span></p>
                     </div>
                     <div className="flex">
                         <p>Escríbenos - <span className="font-bold cursor-pointer">B&DSoluciones@gmail.com</span></p>

@@ -40,7 +40,7 @@ export const TopMenu = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="flex justify-center h-[70px] border-b border-gray-200">
+    <nav className="flex justify-center h-[70px] border-b border-primary">
       <div className="grid grid-cols-4 w-full h-16 px-5 max-w-[1200px]">
         {/* Logo */}
         <div className="col-span-1 flex items-center">
@@ -63,7 +63,7 @@ export const TopMenu = () => {
             navLinks.map(i => (
               <Link href={i.path} key={i.path}>
                 <span 
-                  className={`text-amber-500 hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
+                  className={` text-primary hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
                   { i.name}
                 </span>
               </Link>
@@ -104,7 +104,7 @@ export const TopMenu = () => {
             navLinks.map(i => (
               <Link href={i.path} key={i.path}>
                 <span 
-                  className={`text-xl text-amber-500 hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
+                  className={`text-xl  text-primary hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
                   { i.name}
                 </span>
               </Link>

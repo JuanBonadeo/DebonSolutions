@@ -26,7 +26,7 @@ export const Footer = () => {
                     <Link href="/">
                         <span>
                             <Image
-                                src="/logo.png"
+                                src="/3.png"
                                 alt="Logo"
                                 width={200}
                                 height={200}
@@ -38,7 +38,7 @@ export const Footer = () => {
 
             </div>
             <div className="h-[1px] w-[70%] bg-white !m-auto !my-5"></div>
-            <p className='text-gray-200 text-xs text-center'>© 2025 B&D , Agencia de Desarrollo de Software. All Rights Reserved</p>
+            <p className='text-gray-200 text-xs text-center'>© 2025 DebonSolutions , Agencia de Desarrollo de Software. All Rights Reserved</p>
         </div>
     )
 }

@@ -18,11 +18,11 @@ export const Hero1 = () => {
             </div>
 
             <div className="flex flex-col gap-5 justify-center items-start">
-                <div className="h-[8px] w-12 bg-amber-500"></div>
+                <div className="h-[8px] w-12  bg-primary"></div>
                 <p className='text-left max-w-md' >Creamos software a medida que optimiza procesos, mejora experiencias y genera resultados reales. ¿Listo para impulsar tu negocio? ¡Hablemos hoy!</p>
-                <Link href={'/contacto'} className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
+                <Link href={'/contacto'} className='flex justify-center items-center gap-1 cursor-pointer  hover:scale-105 transition-all'>
                     <span className='font-bold '>Contactanos</span>
-                    <IoArrowForward size={30} className='bg-amber-500 text-white ' />
+                    <IoArrowForward size={30} className=' bg-primary text-white ' />
                 </Link>
             </div>
         </div>

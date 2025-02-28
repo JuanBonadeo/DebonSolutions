@@ -43,12 +43,12 @@ export const Hero2 = () => {
                     ))}
                 </div>
                 <div className="flex flex-col justify-center items-start gap-2">
-                    <h3 className='text-xl font-bold text-amber-500'>Nuestros beneficios</h3>
+                    <h3 className='text-xl font-bold  text-primary'>Nuestros beneficios</h3>
                     <h2 className='text-2xl font-bold'>Brindamos los mejores servicios</h2>
-                    <p className='text-lg max-w-md'>En JLSolutions queremos asegurarnos de que recibas la mejor experiencia como cliente.</p>
-                    <Link href={'/contacto'} className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
+                    <p className='text-lg max-w-md'>En DebonSolutions queremos asegurarnos de que recibas la mejor experiencia como cliente.</p>
+                    <Link href={'/contacto'} className='flex justify-center items-center gap-1 cursor-pointer  hover:scale-105 transition-all'>
                         <span className='font-bold '>Contactanos</span>
-                        <IoArrowForward size={30} className='bg-amber-500 text-white ' />
+                        <IoArrowForward size={30} className=' bg-primary text-white ' />
                     </Link>
                 </div>
 
