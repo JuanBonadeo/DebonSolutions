@@ -61,7 +61,7 @@ export const TopMenu = () => {
         <div className="hidden md:col-span-2 md:flex md:justify-center md:items-center md:gap-10">
           {
             navLinks.map(i => (
-              <Link href={i.path} key={i.path}>
+              <Link href={i.path} key={i.path} onClick={toggleMenu}>
                 <span 
                   className={` text-primary hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
                   { i.name}

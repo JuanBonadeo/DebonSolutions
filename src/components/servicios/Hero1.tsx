@@ -8,7 +8,7 @@ export const Hero1 = () => {
 
                 <div className="flex flex-col gap-5 justify-center items-center lg:items-start">
                     <h1 className='text-4xl font-bold text-center' >Servicios que impulsan tu negocio</h1>
-                    <p className='text-md text-center md:text-left max-w-sm'>
+                    <p className='text-md text-center max-w-xs md:text-left md:max-w-sm'>
                     Nos enfocamos en crear landing pages de alto rendimiento utilizando Next.js, garantizando velocidad, SEO optimizado y una experiencia de usuario excepcional.
                     </p>
                 </div>

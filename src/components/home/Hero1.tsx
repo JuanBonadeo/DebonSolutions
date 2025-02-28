@@ -8,7 +8,7 @@ export const Hero1 = () => {
     return (
         <>
         
-         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center py-20 gap-15">
+         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center py-20 gap-15 md:gap-5 lg:gap-15">
          {/* <ParticlesBackground/> */}
 
 
@@ -19,7 +19,7 @@ export const Hero1 = () => {
 
             <div className="flex flex-col gap-5 justify-center items-start !pl-10 md:!pl-0">
                 <div className="h-[8px] w-12  bg-primary"></div>
-                <p className='text-left max-w-md' >Creamos software a medida que optimiza procesos, mejora experiencias y genera resultados reales. ¿Listo para impulsar tu negocio? ¡Hablemos hoy!</p>
+                <p className='text-left max-w-xs lg:max-w-md' >Creamos software a medida que optimizamos procesos, y generamos resultados reales. <br /> ¿Listo para impulsar tu negocio? <br/> ¡Hablemos hoy!</p>
                 <Link href={'/contacto'} className='flex justify-center items-center gap-1 cursor-pointer  hover:scale-105 transition-all'>
                     <span className='font-bold '>Contactanos</span>
                     <IoArrowForward size={30} className=' bg-primary text-white ' />
