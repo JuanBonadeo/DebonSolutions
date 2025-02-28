@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { IoArrowForward } from 'react-icons/io5'
 import { Line } from '../ui/Line'
+import Link from 'next/link'
 // import { ParticlesBackground } from '../ui/particle'
 
 export const Hero1 = () => {
@@ -19,10 +20,10 @@ export const Hero1 = () => {
             <div className="flex flex-col gap-5 justify-center items-start">
                 <div className="h-[8px] w-12 bg-amber-500"></div>
                 <p className='text-left max-w-md' >Creamos software a medida que optimiza procesos, mejora experiencias y genera resultados reales. ¿Listo para impulsar tu negocio? ¡Hablemos hoy!</p>
-                <button className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
+                <Link href={'/contacto'} className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
                     <span className='font-bold '>Contactanos</span>
                     <IoArrowForward size={30} className='bg-amber-500 text-white ' />
-                </button>
+                </Link>
             </div>
         </div>
         

@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import { IoArrowForward } from 'react-icons/io5'
 
 const items = [
@@ -45,10 +46,10 @@ export const Hero2 = () => {
                     <h3 className='text-xl font-bold text-amber-500'>Nuestros beneficios</h3>
                     <h2 className='text-2xl font-bold'>Brindamos los mejores servicios</h2>
                     <p className='text-lg max-w-md'>En JLSolutions queremos asegurarnos de que recibas la mejor experiencia como cliente.</p>
-                    <button className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
+                    <Link href={'/contacto'} className='flex gap-1 cursor-pointer  hover:scale-105 transition-all'>
                         <span className='font-bold '>Contactanos</span>
                         <IoArrowForward size={30} className='bg-amber-500 text-white ' />
-                    </button>
+                    </Link>
                 </div>
 
 
