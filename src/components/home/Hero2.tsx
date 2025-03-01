@@ -28,6 +28,7 @@ const items = [
 
 
 export const Hero2 = () => {
+    
     return (
             <div className="!my-15 flex justify-center items-center flex-col gap-1">
                 <h2 className="text-2xl text-center font-semibold">Innovación, calidad y compromiso</h2>

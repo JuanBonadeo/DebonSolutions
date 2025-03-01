@@ -54,7 +54,7 @@ export const TopMenu = () => {
   
 
   return (
-    <nav className="flex justify-center h-[70px] border-b border-primary">
+    <nav className="flex justify-center h-[70px] border-b border-primary fixed top-0 z-100 bg-white w-full">
       <div className="grid grid-cols-4 w-full h-16 px-5 max-w-[1200px]">
         {/* Logo */}
         <div className="col-span-1 flex items-center">
@@ -106,14 +106,14 @@ export const TopMenu = () => {
       {/* Mobile Menu */}
       <div
         className={clsx(
-          'md:hidden fixed top-[70px] left-0 w-full h-[calc(100vh+80px)] bg-white z-20 shadow-2xl transform transition-all duration-300 ease-in-out',
+          'md:hidden fixed top-[70px] left-0 w-full h-[calc(100vh-70px)] bg-white z-20 shadow-2xl transform transition-all duration-300 ease-in-out',
           {
             'translate-x-0': isOpen, // Menú visible
             '-translate-x-full': !isOpen, // Menú oculto
           }
         )}
       >
-        <div className="flex flex-col gap-5 !pt-5 !pl-10">
+        <div className="flex flex-col gap-5  !pl-10">
         {
             navLinks.map(i => (
               <Link href={i.path} key={i.path} onClick={ handleLinkClick }>
@@ -130,7 +130,7 @@ export const TopMenu = () => {
       {/* Background overlay */}
       {isOpen && (
         <div
-          className="fixed top-[80px] left-0 w-full h-[calc(100vh-80px)] bg-black opacity-30 z-10"
+          className="fixed top-[70px] left-0 w-full h-[calc(100vh-70px)] bg-black opacity-30 z-10"
           onClick={toggleMenu}
         />
       )}

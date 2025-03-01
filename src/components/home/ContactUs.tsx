@@ -1,7 +1,7 @@
 
 export const ContactUs = () => {
     return (
-        <div className="!my-15  flex flex-col justify-center items-center gap-5 lg:min-h-[60vh]">
+        <div className="!mt-30 !mb-15  flex flex-col justify-center items-center gap-5 lg:min-h-[60vh] fade-in">
             <h2 className="text-center max-w-sm md:max-w-xl text-3xl font-bold">Hablemos de tu próximo proyecto</h2>
             <h4 className="text-lg max-w-xs md:max-w-xl text-center">
                 ¿Tienes una idea? Nos encantaría escucharla. Contáctanos y descubramos juntos cómo podemos ayudarte a alcanzar tus objetivos.

@@ -4,7 +4,7 @@ import { Line } from '../ui/Line'
 export const Hero1 = () => {
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-center items-center  gap-15 md:gap-0 lg:gap-20 !my-20 md:!my-40">
+            <div className="flex flex-col md:flex-row justify-center items-center  gap-15 md:gap-0 lg:gap-20 !mt-30 !mb-20 md:!my-40 fade-in">
 
                 <div className="flex flex-col gap-5 justify-center items-center lg:items-start">
                     <h1 className='text-4xl font-bold text-center' >Servicios que impulsan tu negocio</h1>

@@ -8,13 +8,13 @@ export const Hero1 = () => {
     return (
         <>
         
-         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center py-20 gap-15 md:gap-5 lg:gap-15">
+         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center  pt-30 pb-20 gap-15 md:gap-8 lg:gap-15 fade-in">
          {/* <ParticlesBackground/> */}
 
 
             <div className="flex flex-col gap-3 justify-center items-center">
                 <Image src='/4.png' alt='logo' height={300} width={300} />
-                <h1 className=' text-2xl text-center max-w-xs md:text-4xl md:text-right md:max-w-lg'>Soluciones digitales que marcan la diferencia</h1>
+                <h1 className=' text-2xl  font-semi-bold text-center max-w-xs md:text-4xl md:text-right md:max-w-lg'>Soluciones digitales que marcan la diferencia</h1>
             </div>
 
             <div className="flex flex-col gap-5 justify-center items-start !pl-10 md:!pl-0">
