@@ -54,7 +54,7 @@ export const TopMenu = () => {
   
 
   return (
-    <nav className="flex justify-center h-[70px] border-b border-primary fixed top-0 z-100 bg-white w-full">
+    <nav className="flex justify-center h-[70px] border-b border-primary fixed top-0 z-100 bg-white w-full md:static">
       <div className="grid grid-cols-4 w-full h-16 px-5 max-w-[1200px]">
         {/* Logo */}
         <div className="col-span-1 flex items-center">
@@ -113,7 +113,7 @@ export const TopMenu = () => {
           }
         )}
       >
-        <div className="flex flex-col gap-5  !pl-10">
+        <div className="flex flex-col gap-5  !pl-10 !mt-8">
         {
             navLinks.map(i => (
               <Link href={i.path} key={i.path} onClick={ handleLinkClick }>

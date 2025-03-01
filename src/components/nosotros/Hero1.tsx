@@ -5,7 +5,7 @@ export const Hero1 = () => {
     return (
         <>
         
-         <div className="flex flex-col md:flex-row gap-15 md:gap-0 lg:gap-20 justify-center items-center !mt-30 !mb-20 md:!my-40 fade-in">
+         <div className="flex flex-col md:flex-row gap-15 md:gap-0 lg:gap-20 justify-center items-center !pt-30 !pb-20  md:!my-40 fade-in">
          
             <div className="flex flex-col gap-5 justify-center items-center lg:items-start">
                 <h1 className='text-4xl font-bold text-center max-w-md md:max-w-xl' >SOMOS <span className=' text-primary'>DebonSolutions</span></h1>

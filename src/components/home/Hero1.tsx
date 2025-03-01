@@ -8,7 +8,7 @@ export const Hero1 = () => {
     return (
         <>
         
-         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center  pt-30 pb-20 gap-15 md:gap-8 lg:gap-15 fade-in">
+         <div className="flex flex-col md:flex-row bg-gray-200 justify-center items-center  !pt-30 !pb-20 md:!py-20 gap-15 md:gap-8 lg:gap-15 fade-in">
          {/* <ParticlesBackground/> */}
 
 
