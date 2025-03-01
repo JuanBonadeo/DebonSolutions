@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoCloseOutline, IoMenuOutline } from 'react-icons/io5'; // Importamos íconos
@@ -33,11 +33,25 @@ const navLinks = [
 
 export const TopMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [pathname, setPathname] = useState('');
+  const currentPath = usePathname();
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const pathname = usePathname()
+
+  const handleLinkClick = () => {
+    // Retrasamos el cierre del menú para que la animación se vea
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300); // Este valor debería coincidir con la duración de la animación
+  };
+
+  useEffect(() => {
+    setPathname(currentPath);
+  }, [currentPath]);
+  
 
   return (
     <nav className="flex justify-center h-[70px] border-b border-primary">
@@ -61,7 +75,7 @@ export const TopMenu = () => {
         <div className="hidden md:col-span-2 md:flex md:justify-center md:items-center md:gap-10">
           {
             navLinks.map(i => (
-              <Link href={i.path} key={i.path} onClick={toggleMenu}>
+              <Link href={i.path} key={i.path}>
                 <span 
                   className={` text-primary hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
                   { i.name}
@@ -102,7 +116,7 @@ export const TopMenu = () => {
         <div className="flex flex-col gap-5 !pt-5 !pl-10">
         {
             navLinks.map(i => (
-              <Link href={i.path} key={i.path}>
+              <Link href={i.path} key={i.path} onClick={ handleLinkClick }>
                 <span 
                   className={`text-xl  text-primary hover:text-amber-700 transition-colors ${ i.path == pathname ? 'font-extrabold' : ''}`}>
                   { i.name}

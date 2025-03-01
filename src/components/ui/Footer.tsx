@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 export const Footer = () => {
     return (
-        <div className="flex flex-col !py-10 bg-black">
-            <div className="grid grid-cols-4 w-full h-16 px-5 ">
-                {/* Nav Links for Desktop */}
-                <div className="hidden md:col-span-3 md:flex md:justify-center md:items-center md:gap-10">
+        <div className="flex flex-col justify-center items-center w-full !py-10 bg-black">
+            <div className="flex flex-col-reverse justify-center items-center gap-5 md:grid md:grid-cols-3 md:h-16 md:px-5 md:gap-30">
+                
+                <div className=" col-span-2 flex justify-center items-center gap-5 md:gap-10 ">
                     <Link href="/home">
                         <span className="text-white hover:text-amber-700 transition-colors">Home</span>
                     </Link>
@@ -22,15 +22,15 @@ export const Footer = () => {
                     </Link>
                 </div>
                 {/* Logo */}
-                <div className="col-span-1 flex items-center">
+                <div className="">
                     <Link href="/">
                         <span>
                             <Image
                                 src="/3.png"
                                 alt="Logo"
-                                width={200}
-                                height={200}
-                                className="h-15 w-auto"
+                                width={1200}
+                                height={500}
+                                className=" w-30 lg:w-40 "
                             />
                         </span>
                     </Link>
@@ -38,7 +38,7 @@ export const Footer = () => {
 
             </div>
             <div className="h-[1px] w-[70%] bg-white !m-auto !my-5"></div>
-            <p className='text-gray-200 text-xs text-center'>© 2025 DebonSolutions , Agencia de Desarrollo de Software. All Rights Reserved</p>
+            <p className='text-gray-400 text-[.5em] md:text-xs text-center'>© 2025 DebonSolutions , Agencia de Desarrollo de Software. All Rights Reserved</p>
         </div>
     )
 }
