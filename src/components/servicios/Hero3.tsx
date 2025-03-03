@@ -52,8 +52,8 @@ export const Hero3 = () => {
             <motion.h4
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: .3, ease: "easeIn" }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: .5, ease: "easeIn" }}
                 className='text-lg font-bold  text-primary'>
                 ¿Como funciona?
             </motion.h4>

@@ -19,6 +19,7 @@ export const ContactUs = () => {
             <motion.h4
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: .4, ease: "easeIn" }}
                 className="text-lg max-w-xs md:max-w-xl text-center">
                 ¿Tienes una idea? Nos encantaría escucharla. Contáctanos y descubramos juntos cómo podemos ayudarte a alcanzar tus objetivos.
