@@ -40,7 +40,7 @@ export const ContactUs = () => {
                         <p>¿Prefieres llamarnos? - <span className=" text-primary font-semibold">543412510795</span></p>
                     </div>
                     <div className="flex">
-                        <p>Escríbenos - <span className="font-bold cursor-pointer">B&DSoluciones@gmail.com</span></p>
+                        <p>Escríbenos - <span className="font-bold cursor-pointer">debonsolutions@gmail.com</span></p>
 
                     </div>
                 </div>
