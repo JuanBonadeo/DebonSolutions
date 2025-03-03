@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'motion/react'
 import Image from 'next/image'
 
 const items = [
@@ -36,20 +38,45 @@ const items = [
 
 export const Hero3 = () => {
     return (
-        <div className='flex flex-col justify-center items-center gap-1 !my-15'>
+        <div className='flex flex-col justify-center items-center gap-1 !my-20'>
 
-            <h3 className='text-2xl font-bold'>Nuestro Proceso</h3>
-            <h4 className='text-lg font-bold  text-primary'>¿Como funciona?</h4>
+            <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: .3, ease: "easeIn" }}
+                className='text-2xl font-bold'>
+                Nuestro Proceso
+            </motion.h3>
+
+            <motion.h4
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: .3, ease: "easeIn" }}
+                className='text-lg font-bold  text-primary'>
+                ¿Como funciona?
+            </motion.h4>
 
             <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-5 !my-10">
                 {
-                    items.map(i => (
-                        <div key={i.title} className="flex flex-col justify-center items-center gap-1 bg-gray-200 rounded !p-2">
+                    items.map((i, index) => (
+                        <motion.div
+                        initial={{ y: 100, scale: 0 }}
+                        whileInView={{ y: 0, scale: 1 }}
+                        viewport={{ once: true, amount: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 150,
+                            damping: 15,
+                            delay: 0.2 * index,
+                        }}
+                            key={i.title} className="flex flex-col justify-center items-center gap-1 bg-gray-200 rounded !p-2">
                             <Image src={i.svg} alt={i.title} height={800} width={1200} className='w-[150px] ' />
                             <h4 className='font-bold'>{i.title}</h4>
                             <p className='text-xs max-w-2xs text-center'>{i.p}</p>
 
-                        </div>
+                        </motion.div>
                     ))
                 }
             </div>
