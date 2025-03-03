@@ -42,7 +42,7 @@ export const Hero2 = () => {
                                 type: "spring",
                                 stiffness: 150,
                                 damping: 15,
-                                delay: 0.3 * index,
+                                delay: 0.2 * index,
                             }}
 
 

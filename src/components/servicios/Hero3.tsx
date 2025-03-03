@@ -64,7 +64,7 @@ export const Hero3 = () => {
                         <motion.div
                         initial={{ y: 100, scale: 0 }}
                         whileInView={{ y: 0, scale: 1 }}
-                        viewport={{ once: true, amount: 1 }}
+                        viewport={{ once: true, amount: 0.5 }}
                         transition={{
                             type: "spring",
                             stiffness: 150,
