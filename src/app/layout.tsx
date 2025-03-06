@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { TopMenu } from "../components/ui/TopMenu";
 import { Footer } from "@/components/ui/Footer";
-import { Head } from "next/document";
+
 
 const geistSans = Montserrat({
   variable: "--font-geist-sans",
@@ -30,9 +30,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <head>
           <link rel="icon" href="/favicon.ico" /> {/* Asegúrate de que la ruta sea correcta */}
-        </Head>
+        </head>
       <body
         className={`${geistSans.variable}  antialiased`}
       >
